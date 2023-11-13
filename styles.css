@@ -36,6 +36,13 @@
 }
 
 /*header*/
+.responsive-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
 .icons-social-networks .icons{
     height: 20px;
@@ -70,6 +77,11 @@
     border: 2px solid var(--color-purple);
 }
 
+.cv > a:hover{
+    background-color: var(--color-purple);
+    color: white;
+}
+
 header{
     display: inline-block;
 }
@@ -84,10 +96,6 @@ header .text-muted{
     min-height: 100vh;
 }
 
-.carousel{
-    border: 1px solid red;
-}
-
 .carousel-item .container {
     width: 100%;
     height: 100%;
@@ -99,17 +107,9 @@ header .text-muted{
     margin-bottom: 95%;
  }
 
-.carousel-item{
-    border: 1px solid violet;
-}
 section{  
     margin: 10px;
     padding: 35px;
-    border: 1px solid red;
-}
-
-main{
-    border: 1px solid red;
 }
 
 .tech-seccion{
@@ -121,6 +121,7 @@ main{
     display: inline-block;
     animation: rotate-scale-up 0.5s infini;
 }
+
 .container .rotate-scale-up {
 	-webkit-animation: rotate-scale-up 0.65s linear both;
 	        animation: rotate-scale-up 0.65s linear both;
@@ -203,13 +204,10 @@ main{
     color: white;
 }
 
-
-
 footer{
     background-color: var(--color-purple);
     color: white;
     font-weight: 400;
-    animation: color-change-4x 3s infinite;
 }
 
 
