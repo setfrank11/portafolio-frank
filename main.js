@@ -1,13 +1,9 @@
-const $portafolio = document.querySelector(".sec-portafolio-js");
-const $modalImgPortafolio = document.querySelector('.img-modal-js')
+const menuLinks = document.querySelectorAll('.menu-link');
 
-$portafolio.addEventListener('click', (e)=>{
-    //console.log(e.target.classList);
-    if(e.target.classList.contains('img-btn-modal-js')){
-//SRC
-
-        let urlImg= e.target.attributes[0].nodeValue;
-//add modal
-        $modalImgPortafolio.src = urlImg;
-    }
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Cierra el menú desplegable
+    const navbarCollapse = document.getElementById('mainNav');
+    navbarCollapse.classList.remove('show');
+  });
 });
