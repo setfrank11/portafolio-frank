@@ -1,5 +1,14 @@
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLYFDNHZL5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLYFDNHZL5');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagen/Logo Diseñador web simple lineal azul y blanco (1).png" type="image/x-icon">
@@ -50,7 +59,7 @@
                 <!--Trabajo-->
                 <p data-aos="fade-right" class="text-muted fw-light text-capitalize fs-4 texto">Freelance Web</p>
                 <!--contactos-->
-                <div data-aos="fade-right" class=" icons-social-networks">
+                <div data-aos="fade-right" class="icons-social-networks">
                     <!--github-->
                     <a class="bg-github icons" href="https://github.com/setfrank11" target="_blank">    
                         <i class="bi bi-github"></i>
@@ -78,14 +87,14 @@
     <hr>
     <!--tecnologias y herramientas-->
 
-    <section data-aos="zoom-in" id="secTech" class="row justity-content-around text-center">
+    <section data-aos="zoom-in" id="secTech" class="row justity-content-around text-center mb-1">
         <h2 class="col-12 display-3 text-capitalize m-1 name">Tecnologias y Herramientas</h1>
         <h3 class=" col-12 tech-seccion">En los proyectos o retos utilizo las siguientes Tecnologias y Herramientas de Front End:</h2>
     </section>
 
 <!--Carusel-->
 
-    <div data-aos="zoom-in" id="carrusel-tech" class="carousel carousel-dark slide d-flex align-items-center carrusel-container" data-bs-ride="carousel">
+    <div data-aos="zoom-in" id="carrusel-tech" class="carousel carousel-dark slide d-flex align-items-center carrusel-container mt-1" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active justity-content-center">
             <div class="container rotate-scale-up mt-3">
@@ -259,15 +268,41 @@
 </div>
 </main>
     <!--contacto-->
-<div data-aos="zoom-in" id="secContacto" class="container  pt-4">
+<!-- <div data-aos="zoom-in" id="secContacto" class="container  pt-4">
     <section class="row justify-content-center">
-        <div class="contacto col-9 col-lg-7 text-center py-4 px-3 shadow position-relative photo-frame">
+        <div class="contacto col-9 col-lg-7 text-center py-4 px-3 shadow position-relative">
             <p class="h6 text-muted fw-light">
                 Contactame:
             </p>
             <a href="mailto::fran.velazquez@live.com.mx" class=" text-decoration-none">fran.velazquez@live.com.mx</a>
         </div>
-    </section>
+    </section> -->
+<hr>
+
+    <div data-aos="zoom-in" class="container" id="secContacto">
+        <div class="justify-content-center align-items-center text-center my-4">
+            <h2 class="col-12 display-3 text-capitalize m-3 name">Contactame</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 offset-md-3">
+            <form id="miFormulario" action="https://formspree.io/f/mleyknod" method="POST">
+                <div class="form-group mb-3">
+                    <label class="form-label contacto col-9 col-lg-7 text-center py-4 px-3 shadow position-relative">Tu mail:
+                        <input type="email" class="form-control" name="email">
+                    </label>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label contacto col-9 col-lg-7 text-center py-4 px-3 shadow position-relative"> Tu mensaje:
+                        <textarea class="form-control" name="message"></textarea>
+                    </label>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
 </div>
     <!--footer-->
 <footer class="text-center mb-4 pt-4">
